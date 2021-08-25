@@ -1,0 +1,184 @@
+:root {
+    --color: #048870;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 62.5%;
+}
+body {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    color: #f3f3fc;
+    background-color: #14133F;
+}
+header {
+    height: 40px;
+}
+main {
+    text-align: center;
+}
+main h1 {
+    margin: 0 auto 40px;
+    width: 200px;
+    font-size: 2.8rem;
+    line-height: 2.8rem;
+}
+main p {
+    font-size: 8rem;
+    color: #42F09C;
+}
+.figure {
+    position: relative;
+    margin: 0 auto;
+    width: 120px;
+    height: 120px;
+    background-color: #42F09C;
+}
+.figure:before {
+    content: '';
+    position: absolute;
+    left: 30px;
+    top: 36px;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: var(--color);
+}
+.figure:after {
+    content: '';
+    position: absolute;
+    right: 30px;
+    top: 36px;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: var(--color);
+}
+.figure i {
+    position: absolute;
+    left: 22px;
+    top: 10px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border-top: solid 8px transparent;
+    border-bottom: solid 8px #fff;
+    border-left: solid 8px transparent;
+    border-right: solid 8px transparent;
+    transition: all 0.5s ease;
+}
+.temperature {
+    margin-top: 56px;
+    height: 100px;
+}
+.sign {
+    position: relative;
+    z-index: 1;
+    top: -120px;
+    right: -60px;
+    font-size: 8rem;
+}
+.buttons {
+    display: flex;
+    justify-content: space-evenly;
+    max-height: 200px;
+    min-height: 100px;
+}
+.buttons button {
+    width: 60px;
+    height: 60px;
+    border: none;
+    border-radius: 50%;
+    background-color: #A055FE;
+}
+.buttons button:hover {
+    background-color: #BC8CF9;
+}
+.buttons button:active {
+    background-color: #560bb3;
+}
+.less-icon {
+    color: #fff;
+    position: absolute;
+    margin-left: -12px;
+    width: 26px;
+    height: 3px;
+    background-color: currentColor;
+}
+.reset-icon {
+    color: #fff;
+    position: absolute;
+    margin-left: -16px;
+    margin-top: -16px;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border-top: solid 3px currentColor;
+    border-bottom: solid 3px currentColor;
+    border-left: solid 3px transparent;
+    border-right: solid 3px currentColor;
+}
+.reset-icon:before {
+    content: '';
+    position: absolute;
+    left: 1px;
+    top: 20px;
+    width: 8px;
+    height: 8px;
+    border-top: solid 3px currentColor;
+    border-left: solid 3px currentColor;
+    -webkit-transform: rotate(-22.5deg);
+            transform: rotate(-22.5deg);
+}
+.plus-icon {
+    color: #fff;
+    position: absolute;
+    margin-left: -12px;
+    width: 26px;
+    height: 3px;
+    background-color: currentColor;
+}
+.plus-icon:before {
+    content: '';
+    position: absolute;
+    margin-left: -13px;
+    width: 26px;
+    height: 3px;
+    background-color: currentColor;
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+}
+
+.rotate-center {
+	-webkit-animation: rotate-center 0.6s ease-in-out both;
+	        animation: rotate-center 0.6s ease-in-out both;
+}
+@-webkit-keyframes rotate-center {
+    0% {
+      -webkit-transform: rotate(0);
+              transform: rotate(0);
+    }
+    100% {
+      -webkit-transform: rotate(180deg);
+              transform: rotate(180deg);
+    }
+  }
+  @keyframes rotate-center {
+    0% {
+      -webkit-transform: rotate(0);
+              transform: rotate(0);
+    }
+    100% {
+      -webkit-transform: rotate(180deg);
+              transform: rotate(180deg);
+    }
+  }
