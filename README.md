@@ -1,5 +1,5 @@
 # Test de temperatura
-En este pequeño ejemplo podemos subir y bajar la temperatura y nuestro personajes geométrico cambiará de estado de ánimo.
+En este pequeño ejemplo podemos subir y bajar la temperatura cambiando el estado de ánimo de nuestro personaje geométrico. Dejo captura de pantalla para que puedas usarlo o cambiarlo a tu gusto.
 
 DEMO
 <br/>
